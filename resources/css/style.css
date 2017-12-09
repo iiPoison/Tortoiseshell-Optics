@@ -64,7 +64,7 @@ body {
 }
 
 .main-text {
-  width: 1008px; /* +48px изначально 960px, чтобы тестовый блок чуть выходил за рамки как по тех. заданию */
+  width: 960px;
   margin-top: 10rem;
   display: flex;
   justify-content: flex-end;
@@ -74,15 +74,15 @@ body {
   display: flex;
 }
 
-.white-block-sizes { /* */
-  display: flex;
-  background-color: white;
-
+.white-block-sizes { /* вспомогательный */
+  display: flex;  
 }
 
-/*.white-block-text { /* вспомогательный  delete
-
-} */
+.white-block-text { /* вспомогательный  */
+  background-color: white;
+  position: relative;
+  left: 2rem; /* с помощью относительного позиционирования сдвигаем на 2rem влево */
+}
 
 .white-block-text h1 {
   font-size: 2.3rem; /* то тех заданию 2rem */
