@@ -1,6 +1,7 @@
 body {
   font-size: 18px; /* устанавливает корнейвой шрифт для rem */
   font-family: Helvetica;
+  line-height: 1.4;
 }
 
 .main-img { /* Main block, блок с фоном */
@@ -11,9 +12,16 @@ body {
   height: 30rem;
   display: flex;
   justify-content: center;
+
 }
 
-.main-img-align {
+.head-text-column { /* вспомогательный для выравнивания меню и текста на белом фоне */
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main-img-align { /* задаем вспомогательный блок с заданной шириной */
   width: 960px;
   background-color: cadetblue;
   display: inline-block;
@@ -21,39 +29,64 @@ body {
   margin-top: 1rem;
 }
 
-.main-img-align-sub {
+.main-img-align-sub { /* задаем вспомогательный блок для выравниания по space-between */
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 3.5rem;
 }
 
-.main-logo-header {
+.main-logo-header { /* блок с лого и заголовком, слева */
   display: flex;
   margin: 1rem 2rem;
   align-items: center;
-
 }
 
-.main-logo-header img {
+.main-logo-header img { /* свойства лого */
   height: 1.5rem;
   color: white;
   margin-right: 1rem;
 }
 
-.main-logo-header span { /* задать размер шрифта 1rem по неоюходимости */
+.main-logo-header span { /* свойства заголовка */
   color: white;
-  /*margin: 1rem; */ /* delete */
-
 }
 
-.main-logo-menu {
+.main-logo-menu { /* меню, справа  */
   display: inline-block;
   justify-content: space-between;
   margin: 1rem 2rem;
 }
 
-.main-logo-menu span {
+.main-logo-menu span { /* цвет и размер текста меню */
   color: white;
   padding: 1rem;
+}
+
+.main-text {
+  width: 1008px; /* +48px изначально 960px, чтобы тестовый блок чуть выходил за рамки как по тех. заданию */
+  margin-top: 10rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.white-block { /* вспомогательный  */
+  display: flex;
+}
+
+.white-block-sizes { /* */
+  display: flex;
+  background-color: white;
+
+}
+
+/*.white-block-text { /* вспомогательный  delete
+
+} */
+
+.white-block-text h1 {
+  font-size: 2.3rem; /* то тех заданию 2rem */
+  line-height: 1.2;
+  font-weight: bold;
+  padding: 1.5rem 5rem;
 }
