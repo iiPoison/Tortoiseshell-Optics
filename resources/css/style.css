@@ -1,0 +1,59 @@
+body {
+  font-size: 18px; /* устанавливает корнейвой шрифт для rem */
+  font-family: Helvetica;
+}
+
+.main-img { /* Main block, блок с фоном */
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  display: flex;
+  justify-content: center;
+}
+
+.main-img-align {
+  width: 960px;
+  background-color: cadetblue;
+  display: inline-block;
+  height: 3.5rem;
+  margin-top: 1rem;
+}
+
+.main-img-align-sub {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+}
+
+.main-logo-header {
+  display: flex;
+  margin: 1rem 2rem;
+  align-items: center;
+
+}
+
+.main-logo-header img {
+  height: 1.5rem;
+  color: white;
+  margin-right: 1rem;
+}
+
+.main-logo-header span { /* задать размер шрифта 1rem по неоюходимости */
+  color: white;
+  /*margin: 1rem; */ /* delete */
+
+}
+
+.main-logo-menu {
+  display: inline-block;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+}
+
+.main-logo-menu span {
+  color: white;
+  padding: 1rem;
+}
