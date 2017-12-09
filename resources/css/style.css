@@ -44,7 +44,6 @@ body {  /* global property */
 
 .main-logo-header img { /* свойства лого */
   height: 1.5rem;
-  color: white;
   margin-right: 1rem;
 }
 
@@ -253,3 +252,29 @@ body {  /* global property */
 .appointments-paragraph {
   margin-top: 1rem;
 }
+/* end INFO block */
+
+.footer-block { /* основной разделитель */
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+  width: 100%;
+  background-color: azure;
+}
+
+footer { /* задает базовую ширину в 960px */
+  width: 960px;
+  display: flex;
+  justify-content: flex-start;;
+}
+
+.footer-logo {
+  display: flex;
+  margin: 4rem;
+}
+
+.footer-logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+/*end footer block */
