@@ -1,4 +1,4 @@
-body {
+body {  /* global property */
   font-size: 18px; /* устанавливает корнейвой шрифт для rem */
   font-family: Helvetica;
   line-height: 1.4;
@@ -75,7 +75,7 @@ body {
 }
 
 .white-block-sizes { /* вспомогательный */
-  display: flex;  
+  display: flex;
 }
 
 .white-block-text { /* вспомогательный  */
@@ -90,3 +90,105 @@ body {
   font-weight: bold;
   padding: 1.5rem 5rem;
 }
+/* end Main block with background, header and text */
+
+.content-block { /* основной разделитель */
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.content-block-size { /* задает базовую ширину в 960px */
+  width: 960px;
+  display: flex;
+  justify-content: center;
+}
+
+.paper { /* первый элемент Paper */
+  height: 8rem;
+  margin: auto 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.paper-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.paper-text {
+  display: block;
+  margin-top: 1rem;
+}
+
+.paper-text span {
+  display: block;
+  text-align: center;
+}
+
+.ruler { /* второй элемент Ruler */
+  height: 8rem;
+  margin: auto 3rem;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ruler-img {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.ruler img {
+  width: 5rem;
+  height: auto;
+}
+
+.ruler-text {
+  display: block;
+  margin-top: 2rem;
+}
+
+.ruler-text span {
+  display: block;
+  text-align: center;
+}
+
+.truck { /* третий элемент Truck */
+  height: 8rem;
+  margin: auto 3rem;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.truck-img {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.truck img {
+  width: 5rem;
+  height: auto;
+}
+
+.truck-text {
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.truck-text span {
+  display: block;
+  text-align: center;
+}
+/* and IMG block */
