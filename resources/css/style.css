@@ -192,3 +192,64 @@ body {  /* global property */
   text-align: center;
 }
 /* and IMG block */
+
+.text-block { /* основной разделитель */
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.text-block-size { /* задает базовую ширину в 960px */
+  width: 960px;
+  display: flex;
+  justify-content: center;
+}
+
+.philosophy { /* первый элемент Philosophy */
+  width: 35%;
+  display: block;
+  margin: 2.5%;
+}
+
+.philosophy-head{
+  background-color: cadetblue;
+  display: block;
+  width: 10rem; /* возможно увеличить */
+}
+
+.philosophy-head span {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0.5rem 1.25rem;
+}
+
+.philosophy-paragraph {
+  margin-top: 1rem;
+}
+
+.appointments { /* второй элемент Appointments */
+  width: 35%;
+  display: block;
+  margin: 2.5%;
+}
+
+.appointments-head{
+  background-color: cadetblue;
+  display: block;
+  width: 10rem; /* возможно увеличить */
+}
+
+.appointments-head span {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 0.5rem 1.25rem;
+}
+
+.appointments-paragraph {
+  margin-top: 1rem;
+}
