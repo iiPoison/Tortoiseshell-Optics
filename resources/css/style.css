@@ -51,15 +51,31 @@ body {  /* global property */
   color: white;
 }
 
-.main-logo-menu { /* меню, справа  */
+.main-logo-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-menu { /* меню, справа  */
   display: inline-block;
   justify-content: space-between;
   margin: 1rem 2rem;
 }
 
-.main-logo-menu span { /* цвет и размер текста меню */
+.main-menu span { /* цвет и размер текста меню */
   color: white;
   padding: 1rem;
+}
+
+.sub-menu {
+  text-align: center;
+}
+
+.sub-menu span {
+  color: white;
+  padding: 1rem;
+  display: none;
 }
 
 .main-text {
