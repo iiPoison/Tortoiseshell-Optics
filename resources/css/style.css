@@ -78,7 +78,7 @@ body {  /* global property */
   display: none;
 }
 
-.main-text {
+.main-text { /* блок для выравнивания текста на белом фоне */
   width: 960px;
   margin-top: 10rem;
   display: flex;
@@ -91,6 +91,7 @@ body {  /* global property */
 
 .white-block-sizes { /* вспомогательный */
   display: flex;
+  justify-content: center;
 }
 
 .white-block-text { /* вспомогательный  */
@@ -296,7 +297,7 @@ footer { /* задает базовую ширину в 960px */
 }
 /*end footer block */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) { /* медиа запрос для планшетной версии */
   body { /* убираем сверху область */
     margin: 0;
     padding: 0;
@@ -330,9 +331,47 @@ footer { /* задает базовую ширину в 960px */
 
 
   .white-block-text h1 { /* своства текста */
-    font-size: 1.33rem; 
-    line-height: 1.2;
+    font-size: 1.33rem;
     padding: 0.75rem 4rem;
   }
+}
+
+@media only screen and (max-width: 479px) {
+  .main-img { /* высота блока с фоном в 17rem */
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .main-logo-menu { /* основное и скрытое меню меняем на располажение в строку */
+    flex-direction: row;
+  }
+  .main-logo-header span { /* скрываем заголовок справа от лого */
+    display: none;
+  }
+
+  .main-menu span { /* скрываем основное меню */
+    display: none;
+  }
+
+  .sub-menu span { /* показываем основне меню */
+    display: block;
+  }
+
+  .main-text { /* блок для выравнивания текста на белом фоне */
+    width: 100%; /* возможно изменить на 479px */
+    margin-top: 9rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .white-block-text { /* вспомогательный  */
+    background-color: white;
+  }
+
+  .white-block-text h1 { /* шрифт и padding текста на белом фоне */
+    font-size: 1rem;
+    padding: 1rem auto;
+  }
+/* end Main block with background, header and text */
 
 }
