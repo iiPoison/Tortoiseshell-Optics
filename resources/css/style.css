@@ -20,7 +20,6 @@ body {  /* global property */
   flex-direction: column;
 }
 
-
 .main-img-align { /* задаем вспомогательный блок с заданной шириной */
   width: 960px;
   background-color: cadetblue;
@@ -373,5 +372,51 @@ footer { /* задает базовую ширину в 960px */
     padding: 1rem auto;
   }
 /* end Main block with background, header and text */
+
+  .content-block { /* основной разделитель */
+    display: flex;
+    justify-content: center;
+    margin-top: 3.77rem;
+    width: 100%;
+  }
+
+  .content-block-size { /* задает базовую ширину в 5rem */
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .paper { /* первый элемент Paper */
+    width: 5rem;
+    margin: 0;
+    margin-top: 0.2rem;
+  }
+
+  .paper-text span {
+    font-size: 0.77rem;
+  }
+
+  .ruler { /* второй элемент Ruler */
+    width: 5rem;
+    margin: 0;
+    margin-top: 1.54rem;
+  }
+
+  .ruler-text span {
+    font-size: 0.77rem;
+  }
+
+  .truck { /* третий элемент Truck */
+    width: 5rem;
+    margin: 0;
+    margin-top: 1.54rem;
+  }
+
+  .truck-text span {
+    font-size: 0.77rem;
+  }
+
+
 
 }
