@@ -417,6 +417,72 @@ footer { /* задает базовую ширину в 960px */
     font-size: 0.77rem;
   }
 
+  .text-block { /* основной разделитель */
+    display: flex;
+    justify-content: center;
+    margin-top: 3.77rem;
+    width: 100%;
+  }
+
+  .text-block-size { /* задает базовую ширину в 960px */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .philosophy { /* первый элемент Philosophy */
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+
+  .philosophy-head{
+    background-color: cadetblue;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .philosophy-head span {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .philosophy-paragraph {
+    margin: auto 1rem;
+  }
+
+  .philosophy-paragraph p {
+    font-size: 0.77rem;
+  }
+
+  .appointments { /* второй элемент Appointments */
+    width: 100%;
+    display: block;
+    margin: 0;
+    margin-top: 4rem;
+  }
+
+  .appointments-head{
+    background-color: cadetblue;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .appointments-head span {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .appointments-paragraph {
+    margin: auto 1rem;
+  }
+
+  .appointments-paragraph p {
+    font-size: 0.77rem;
+  }
 
 
 }
