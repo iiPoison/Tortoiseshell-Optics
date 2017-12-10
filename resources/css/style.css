@@ -68,11 +68,11 @@ body {  /* global property */
   padding: 1rem;
 }
 
-.sub-menu {
+.sub-menu { /* доп меню для мобильной версии */
   text-align: center;
 }
 
-.sub-menu span {
+.sub-menu span { /* доп меню для мобильной версии */
   color: white;
   padding: 1rem;
   display: none;
@@ -97,6 +97,7 @@ body {  /* global property */
   background-color: white;
   position: relative;
   left: 2rem; /* с помощью относительного позиционирования сдвигаем на 2rem влево */
+
 }
 
 .white-block-text h1 {
@@ -294,3 +295,44 @@ footer { /* задает базовую ширину в 960px */
   margin-right: 1rem;
 }
 /*end footer block */
+
+@media only screen and (max-width: 1024px) {
+  body { /* убираем сверху область */
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-img { /* высота блока с фоном в 22rem */
+    height: 22rem;
+  }
+
+  .head-text-column { /* это я хз что за блок */
+    width: 100%;
+  }
+
+
+  .main-img-align { /* блок с меню и лого */
+    margin-top: 0;
+    width: 960px;
+    width: 100%;
+  }
+
+  .main-text { /* блок на белом фоне с текстом */
+    width: 960px;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  .white-block-text { /* вспомогательный  */
+    position: relative;
+    left: -2rem; /* с помощью относительного позиционирования сдвигаем на 2rem вправо */
+  }
+
+
+  .white-block-text h1 { /* своства текста */
+    font-size: 1.33rem; 
+    line-height: 1.2;
+    padding: 0.75rem 4rem;
+  }
+
+}
