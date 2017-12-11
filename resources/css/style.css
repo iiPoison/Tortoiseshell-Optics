@@ -86,10 +86,6 @@ body {  /* global property */
 
 .white-block { /* вспомогательный  */
   display: flex;
-}
-
-.white-block-sizes { /* вспомогательный */
-  display: flex;
   justify-content: center;
 }
 
@@ -334,8 +330,28 @@ footer { /* задает базовую ширину в 960px */
     padding: 0.75rem 4rem;
   }
 }
+@media only screen and (max-width: 700px) { /* на 700px верхнее меню накладывается друг на друга, чуть уменьшили */
+  .main-logo-header {
+    margin: 1rem 0;
+  }
 
-@media only screen and (max-width: 479px) {
+  .main-logo-header img {
+    margin-left: 2rem;
+  }
+
+  .main-menu {
+    margin: 1rem 0;
+  }
+
+  .main-menu span {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
+
+
+
+}
+@media only screen and (max-width: 560px) {
   .main-img { /* высота блока с фоном в 17rem */
     height: 17rem;
     background-position: 20%;
@@ -364,7 +380,11 @@ footer { /* задает базовую ширину в 960px */
   }
 
   .white-block-text { /* вспомогательный  */
+    width: 100%;
     background-color: white;
+    position: static;
+    display: flex;
+    justify-content: center;
   }
 
   .white-block-text h1 { /* шрифт и padding текста на белом фоне */
@@ -455,6 +475,7 @@ footer { /* задает базовую ширину в 960px */
 
   .philosophy-paragraph p {
     font-size: 0.77rem;
+    padding-top: 0.8rem;
   }
 
   .appointments { /* второй элемент Appointments */
@@ -474,6 +495,7 @@ footer { /* задает базовую ширину в 960px */
   .appointments-head span {
     font-size: 1rem;
     margin: 0;
+
   }
 
   .appointments-paragraph {
@@ -482,7 +504,19 @@ footer { /* задает базовую ширину в 960px */
 
   .appointments-paragraph p {
     font-size: 0.77rem;
+    padding-top: 0.8rem;
   }
+
+  .footer-logo span {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+
+  }
+
+
 
 
 }
