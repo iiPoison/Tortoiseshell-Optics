@@ -293,6 +293,7 @@ footer { /* задает базовую ширину в 960px */
 /*end footer block */
 
 @media only screen and (max-width: 1024px) { /* медиа запрос для планшетной версии */
+
   body { /* убираем сверху область */
     margin: 0;
     padding: 0;
@@ -331,19 +332,20 @@ footer { /* задает базовую ширину в 960px */
   }
 }
 @media only screen and (max-width: 700px) { /* на 700px верхнее меню накладывается друг на друга, чуть уменьшили */
-  .main-logo-header {
+
+  .main-logo-header { /* убираем боковые margin */
     margin: 1rem 0;
   }
 
-  .main-logo-header img {
+  .main-logo-header img { /* слева лого добавляем 2rem */
     margin-left: 2rem;
   }
 
-  .main-menu {
+  .main-menu { /* убираем боковые margin у меню */
     margin: 1rem 0;
   }
 
-  .main-menu span {
+  .main-menu span { /* уменбшаем шрифт до 1rem и расстояние между элементами до 0,77rem */
     font-size: 1rem;
     padding: 0.7rem;
   }
@@ -352,6 +354,7 @@ footer { /* задает базовую ширину в 960px */
 
 }
 @media only screen and (max-width: 560px) {
+
   .main-img { /* высота блока с фоном в 17rem */
     height: 17rem;
     background-position: 20%;
@@ -388,8 +391,11 @@ footer { /* задает базовую ширину в 960px */
   }
 
   .white-block-text h1 { /* шрифт и padding текста на белом фоне */
+    width: 100%;
     font-size: 1rem;
     padding: 1rem auto;
+    padding: 0.75rem 3rem; /* уменьшаем боковые margin до 3rem */
+    text-align: center;
   }
 /* end Main block with background, header and text */
 
@@ -444,7 +450,7 @@ footer { /* задает базовую ширину в 960px */
     width: 100%;
   }
 
-  .text-block-size { /* задает базовую ширину в 960px */
+  .text-block-size { /* задает базовую ширину 100 % */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -495,7 +501,6 @@ footer { /* задает базовую ширину в 960px */
   .appointments-head span {
     font-size: 1rem;
     margin: 0;
-
   }
 
   .appointments-paragraph {
@@ -507,16 +512,12 @@ footer { /* задает базовую ширину в 960px */
     padding-top: 0.8rem;
   }
 
-  .footer-logo span {
+  .footer-logo span { /* убираем текст футера */
     display: none;
   }
 
-  footer {
+  footer { /* центрируем лого */
     justify-content: center;
-
   }
-
-
-
 
 }
